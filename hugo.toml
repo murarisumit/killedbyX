@@ -1,11 +1,13 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Killed By Curefit'
+title = 'Google Graveyard'
 theme = "killedbyx"
-copyright = "&copy; 2010 - {currentYear} Curefit. All rights reserved."
+
 
 [params]
-companyName = "Curefit"
+copyright = "&copy; 2010 - {currentYear} Google. All rights reserved."
+companyName = "Google"
+header = 'Killed by Google'
 deathLogo = "images/tombstone.svg"
 altDeathLogo = "images/tombstone-alt.svg"
 githubIcon = "images/github.svg"

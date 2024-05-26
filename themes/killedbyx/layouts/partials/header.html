@@ -1,4 +1,7 @@
 {{ $image := resources.Get .Site.Params.deathLogo }}
+{{ $companyName := .Site.Params.companyName }}
+{{ $header := .Site.Params.header }}
+
 <a rel="noreferrer noopener" href="/" style="border-bottom: 0;">
     <div class="header-title-image-div">
         <div class="title-image-div">
@@ -6,7 +9,7 @@
             <img width="60px" src="{{ .RelPermalink }}" height="60px" alt="Tombstone">
             {{ end }}  
         </div>
-        <h1 class="header-site-title">{{ site.Title }}</h1>
+        <h1 class="header-site-title"> {{ $header }}</h1>
     </div>
 </a>
 {{- /* {{ partial "menu.html" (dict "menuID" "main" "page" .) }} */}}
