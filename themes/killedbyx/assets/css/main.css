@@ -119,6 +119,13 @@ a {
   margin: 0;
 }
 
+.project-tags {
+  font-size:0.75em;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+
 .project-description {
   font-size: 0.9em;
   line-height: 1.5;

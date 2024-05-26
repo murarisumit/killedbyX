@@ -12,8 +12,14 @@
             <div class="project-life"> {{ .started }} - {{ .died }} </div>
             {{ end }}
         </div>
-        <div class="project-title-with-desc">
+        <div class="project-title-with-desc">   
             <h2> <a href="{{ .link }}">{{ .name }}</a> </h2>
+
+            {{ range .tags }}
+            <div class="project-tags"> 
+                <span style="padding: 0.25rem; display: inline-block; background-color: rgb(224, 224, 224); border-radius: 0.25rem; margin-top: 0.3rem; color: gray; font-size: 0.7em; text-transform: capitalize;"> {{ . }}</span>
+            </div>
+            {{ end }}
             <p class="project-description"> {{ .description }} </p>
         </div>
     </li>
