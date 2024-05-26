@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $image := resources.Get .Site.Params.deathLogo }}
+
+<ul class="project-list">
+    {{ range $.Site.Data.projects }}
+    <li class="project">
+        <div class="death-icon-with-timeline">
+            {{ with $image }}
+            <img class="death-icon" src="{{ .RelPermalink }}"/>
+            {{ end }}   
+            {{ if .started }}
+            <div class="project-life"> {{ .started }} - {{ .died }} </div>
+            {{ end }}
+        </div>
+        <div class="project-title-with-desc">
+            <h2> <a href="{{ .link }}">{{ .name }}</a> </h2>
+            <p class="project-description"> {{ .description }} </p>
+        </div>
+    </li>
+    {{ end }} {{- /* range over the projects data */ -}}
+</ul>
+{{ end }} {{- /* define "main" */ -}}

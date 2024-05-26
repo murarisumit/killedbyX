@@ -1,0 +1,13 @@
+{{ $image := resources.Get .Site.Params.deathLogo }}
+<a rel="noreferrer noopener" href="/" style="border-bottom: 0;">
+    <div class="header-title-image-div">
+        <div class="title-image-div">
+            {{ with $image }}
+            <img width="60px" src="{{ .RelPermalink }}" height="60px" alt="Tombstone">
+            {{ end }}  
+        </div>
+        <h1 class="header-site-title">{{ site.Title }}</h1>
+    </div>
+</a>
+{{- /* {{ partial "menu.html" (dict "menuID" "main" "page" .) }} */}}
+

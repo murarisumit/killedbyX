@@ -1,0 +1,5 @@
+{{ range $.Site.Data.projects }}
+    <b>repo: </b> github.com/{{ .repo }} <br/>
+    <b>name: </b> {{ .name }} <br/>
+    <b>description:</b> {{ .description }} <br/> 
+{{ end }} {{- /* range over the projects data */ -}}

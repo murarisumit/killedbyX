@@ -1,0 +1,20 @@
+
+{{ $githubIcon := resources.Get .Site.Params.githubIcon }}
+{{ $companyName := resources.Get .Site.Params.companyName }}
+
+<div class="footer">
+    <p> Killed by {{ .Site.Params.companyName }} is the {{ .Site.Params.companyName }} graveyard; list of discontinued {{ $.Site.Params.companyName}} services, products, devices, and apps. </p>
+    <p> This is there to remember the dead {{ .Site.Params.companyName }} products & for new joinee to see what endavour already take place & if they find anything intresting in them</p>
+    
+    
+    <p> {{ with replace .Site.Copyright "{currentYear}" now.Year }}{{ . | markdownify}} &middot; {{ end }} </p>
+    <div> 
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/curefit" class="footer-icons">
+            {{ with $githubIcon }}
+            <img width="24px" height="24px" src="{{ .RelPermalink }}" alt="GitHub" class="css-rrel8y"/>
+            {{ end }}
+        </a>
+    </div>
+</div>
+
+

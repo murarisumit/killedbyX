@@ -1,3 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Killed By Curefit'
+theme = "killedbyx"
+copyright = "&copy; 2010 - {currentYear} Curefit. All rights reserved."
+
+[params]
+companyName = "Curefit"
+deathLogo = "images/tombstone.svg"
+altDeathLogo = "images/tombstone-alt.svg"
+githubIcon = "images/github.svg"
+
