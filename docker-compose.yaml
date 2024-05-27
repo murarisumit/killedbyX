@@ -1,0 +1,7 @@
+services:
+  hugo:
+    build: src/
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 1313:80
